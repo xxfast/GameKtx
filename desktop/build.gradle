@@ -7,6 +7,14 @@ sourceSets.main.resources.srcDirs = ["../android/assets"]
 project.ext.mainClassName = "com.xfastgames.com.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../android/assets")
 
+dependencies {
+    implementation project(":core")
+    api "com.badlogicgames.gdx:gdx-backend-lwjgl:${versions.libgdx}"
+    api "com.badlogicgames.gdx:gdx-platform:${versions.libgdx}:natives-desktop"
+    api "com.badlogicgames.gdx:gdx-box2d-platform:${versions.libgdx}:natives-desktop"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
+}
+
 task run(dependsOn: classes, type: JavaExec) {
     main = project.mainClassName
     classpath = sourceSets.main.runtimeClasspath
@@ -33,6 +41,5 @@ task dist(type: Jar) {
     }
     with jar
 }
-
 
 dist.dependsOn classes
