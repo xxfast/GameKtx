@@ -15,5 +15,4 @@ cache:
 
 # Gross workaround for builds failing: https://github.com/travis-ci/travis-ci/issues/8874
 before_install:
-  - chmod +x gradlew
   - yes | sdkmanager "platforms;android-27"
