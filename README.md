@@ -3,6 +3,8 @@
 
 Sample libKtx game targeting desktop, ios and android
 
+Sample project was made using the [libgdx builder](https://libgdx.badlogicgames.com/download.html), then optimised, cleaned up and sprinkled in some [libktx](https://libktx.github.io/) 
+
 ## Module Structure
 
 * `GameKt`
