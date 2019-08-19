@@ -8,7 +8,7 @@ sourceSets.main.java.srcDirs = [ "src/" ]
 dependencies {
   api "com.badlogicgames.gdx:gdx:${versions.libgdx}"
   api "com.badlogicgames.gdx:gdx-box2d:${versions.libgdx}"
-  implementation "io.github.libktx:ktx-app:${versions.libktx}"
-  implementation "io.github.libktx:ktx-graphics:${versions.libktx}"
+  api "io.github.libktx:ktx-app:${versions.libktx}"
+  api "io.github.libktx:ktx-graphics:${versions.libktx}"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
 }
