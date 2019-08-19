@@ -17,10 +17,8 @@ class ExampleScreen : KtxScreen {
     color = Color.WHITE
   }
 
-  override fun render(delta: Float) {
-    batch.use {
-      font.draw(it, "Hello Kotlin!", 100f, 100f)
-    }
+  override fun render(delta: Float) = batch.use {
+    font.draw(it, "Hello Kotlin!", 100f, 100f)
   }
 
   override fun dispose() {
