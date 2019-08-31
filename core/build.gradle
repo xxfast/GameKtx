@@ -10,5 +10,6 @@ dependencies {
   api "com.badlogicgames.gdx:gdx-box2d:${versions.libgdx}"
   api "io.github.libktx:ktx-app:${versions.libktx}"
   api "io.github.libktx:ktx-graphics:${versions.libktx}"
+  api "io.github.libktx:ktx-actors:${versions.libktx}"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:${versions.kotlin}"
 }

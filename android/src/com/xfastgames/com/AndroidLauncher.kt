@@ -4,6 +4,7 @@ import android.os.Bundle
 import com.badlogic.gdx.ApplicationListener
 import com.badlogic.gdx.backends.android.AndroidApplication
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration
+import com.xfastgames.com.example.ExampleGame
 
 class AndroidLauncher : AndroidApplication() {
   override fun onCreate(savedInstanceState: Bundle?) {
